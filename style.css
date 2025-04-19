@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  }
+  
+  .glass-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  .glass-form h2 {
+    color: #37474F;
+    margin-bottom: 20px;
+    text-align: center;
+    mix-blend-mode: difference;
+    text-shadow: #ffffff33;
+  }
+  
+  .glass-form input {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #000;
+  }
+  
+  .glass-form input::placeholder {
+    color: #37474F;
+  }
+  
+  .glass-form button {
+    padding: 12px;
+    background: #ffffff33;
+    border: none;
+    border-radius: 10px;
+    color: #37474F;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .glass-form button:hover {
+    background: #ffffff55;
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      padding: 20px;
+      margin: 20px;
+    }
+  
+    .glass-form {
+      width: 100%;
+    }
+  
+    .glass-form input,
+    .glass-form button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .glass-form h2 {
+      font-size: 20px;
+    }
+  }
+  
